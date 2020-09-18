@@ -1,0 +1,62 @@
+name: Hub
+version: 1.2
+authors:
+    - bowser123467
+    - yukit0308
+main: com.playerrealms.hub.HubPlugin
+depend: [PlayerIslands, HikariBoard]
+commands:
+    vote:
+        description: Vote for a server, increasing its rank
+        usage: /vote [server]
+    islands:
+        description: Shows you a list of popular realms
+        usage: /islands <votes/players>
+    setfeatured:
+        description: Set the currently featured server
+        usage: /setfeatured [server OR * to remove featured server]
+        permission: playerrealms.commands.setfeatured
+    debug:
+        description: Debug server menu
+        permission: playerrealms.commands.debug
+    globalbonus: 
+        description: Give a global coin bonus
+        permission: playerrealms.commands.globalbonus
+    buy:
+        description: Open buycraft store
+    setrank:
+        description: Set a players global rank
+        usage: /setrank [player] [rank]
+        permission: playerrealms.commands.setrank
+    perm: 
+        description: Add / remove a permission to a rank
+        usage: /perms [rank] [add / remove] [permission]
+        permission: playerrealms.commands.perms
+        aliases: [perms]
+    raccept:
+        aliases: [accept]
+        usage: /raccept [name]
+    thirdparty: 
+        description: Converts your realm to third-party or back to a regular realm
+        usage: /thirdparty
+        permission: playerrealms.commands.thirdparty
+    discord:
+        description: See the discord link
+    givecrate:
+        description: Give a player a crate
+        permission: playerrealms.commands.givecrate
+        usage: /givecrate [player] [crate type] [amount]
+    code:
+        description: Login to PlayerRealms app
+    golden:
+        description: Golden Week
+    ents:
+        description: Entities
+    birthday:
+        description: Birthday commands
+    rule:
+        description: Rule commands
+    spawn:
+        description: Spawn command
+    parkour:
+        description: Parkour command
